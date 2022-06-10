@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calc">
+        <h1 class="display">
+            
+        </h1>
+        <div class="keyPad">
+            <table>
+                <tr>
+                    <td>
+                        <div class="key clear">AC</div>
+                    </td>
+                    <td>
+                        <div onclick="clearLast()" class="key delete">C</div>
+                    </td>
+                    <td>
+                        <div onclick="calcPercentage()"  class="key">%</div>
+                    </td>
+                    <td>
+                        <div onclick="showInDisplay('/')" class="key">&#xf7;</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div onclick="showInDisplay(7)" class="key">7</div>
+                    </td>
+                    <td>
+                        <div onclick="showInDisplay(8)" class="key">8</div>
+                    </td>
+                    <td>
+                        <div onclick="showInDisplay(9)" class="key">9</div>
+                    </td>
+                    <td>
+                        <div onclick="showInDisplay('*')" class="key">x</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div onclick="showInDisplay(4)" class="key">4</div>
+                    </td>
+                    <td>
+                        <div onclick="showInDisplay(5)" class="key">5</div>
+                    </td>
+                    <td>
+                        <div onclick="showInDisplay(6)" class="key">6</div>
+                    </td>
+                    <td>
+                        <div onclick="showInDisplay('-')" class="key">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div onclick="showInDisplay(1)" class="key">1</div>
+                    </td>
+                    <td>
+                        <div onclick="showInDisplay(2)" class="key">2</div>
+                    </td>
+                    <td>
+                        <div onclick="showInDisplay(3)" class="key">3</div>
+                    </td>
+                    <td>
+                        <div onclick="showInDisplay('+')" class="key">+</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div onclick="showInDisplay(0)"  class="key zero">0</div>
+                    </td>
+                    
+                    <td>
+                        <div onclick="showInDisplay('.')"  class="key">.</div>
+                    </td>
+                    <td>
+                        <div onclick="calculate()" class="key">=</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
